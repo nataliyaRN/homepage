@@ -2,6 +2,12 @@ import './../dashboard.module.css';
 import React from 'react';
 import Lottie from 'react-lottie';
 import serviceItemLottie1 from './../lotties/serviceItemLottie1.json';
+import serviceItemLottie2 from './../lotties/serviceItemLottie2.json';
+import serviceItemLottie3 from './../lotties/serviceItemLottie3.json';
+import serviceItemLottie4 from './../lotties/serviceItemLottie4.json';
+import serviceItemLottie6 from './../lotties/serviceItemLottie6.json';
+import serviceItemLottie9 from './../lotties/serviceItemLottie9.json';
+import serviceItemLottie10 from './../lotties/serviceItemLottie10.json';
 import heroLottie from './../lotties/hero.json';
 import Header from "../components/Header";
 
@@ -16,6 +22,56 @@ export default function Dashboard() {
         renderer: 'svg',
 
     };
+    const serviceItemLottieZwei = {
+        loop: true,
+        autoplay: true,
+        duration: true,
+        direction: 1,
+        animationDuration:2.67,
+        animationData: serviceItemLottie2,
+        renderer: 'svg',
+
+    };
+    const serviceItemLottieDrei  = {
+        loop: true,
+        autoplay: true,
+        duration: true,
+        direction: 1,
+        animationDuration:2.67,
+        animationData: serviceItemLottie3,
+        renderer: 'svg',
+
+    };
+    const serviceItemLottieVier  = {
+        loop: true,
+        autoplay: true,
+        duration: true,
+        direction: 1,
+        animationDuration:2.67,
+        animationData: serviceItemLottie4,
+        renderer: 'svg',
+
+    };
+    const serviceItemLottieSechs  = {
+        loop: true,
+        autoplay: true,
+        duration: true,
+        direction: 1,
+        animationDuration:2.67,
+        animationData: serviceItemLottie6,
+        renderer: 'svg',
+
+    };
+    const serviceItemLottieZehn  = {
+        loop: true,
+        autoplay: true,
+        duration: true,
+        direction: 1,
+        animationDuration:2.67,
+        animationData: serviceItemLottie10,
+        renderer: 'svg',
+
+    };
     const heroLottieOptions = {
         loop: true,
         autoplay: true,
@@ -23,6 +79,16 @@ export default function Dashboard() {
         direction: false,
         animationDuration:2.67,
         animationData: heroLottie,
+    };
+    const serviceItemLottieNeun   = {
+        loop: true,
+        autoplay: true,
+        duration: true,
+        direction: 1,
+        animationDuration:2.67,
+        animationData: serviceItemLottie9,
+        renderer: 'svg',
+
     };
     return <>
     <Header/>
@@ -75,11 +141,11 @@ export default function Dashboard() {
         <div className={`w-layout-blockcontainer container-small w-container`}>
             <div className="service-title-block">
                 <div className="section-title-block">
-                    <h2 className="section-title">Entwicklung, die Wachstum f&ouml:rdert</h2>
+                    <h2 className="section-title">Entwicklung, die Wachstum f&ouml;rdert</h2>
                     <p>Agile Methoden der Entwicklung: Scrum, Kanban. Refactoring bzw. Weiterentwicklung von modernen
                         und legacy Applikationen.</p>
                 </div>
-                <h3 className="service-one-line">Erfahrung in folgenden Technologien</h3>
+                <h3 className="service-one-line">Erfahrungen in folgenden Technologien</h3>
             </div>
             <div data-is-ix2-target="1" className="service-arrow-lottie"
                  data-animation-type="lottie"
@@ -91,26 +157,13 @@ export default function Dashboard() {
                     <div className="service-item-block">
                         <h3 className={`service-item-title one`}>Mysql, Oracle</h3>
                         <Lottie options={serviceItemLottieEins} width='140px'/>
-                        <div data-is-ix2-target="1"
-                             className="service-item-lottie" data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6055_Animation%20-%201699426090585.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
                     </div>
                     <div className={`service-item-block two`}>
                         <h3 className="service-item-title">Spring Batch</h3>
-                        <div data-is-ix2-target="1"
-                             className={`service-item-lottie two`} data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6057_Animation%20-%201699426006166.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={serviceItemLottieZwei} width='140px'/>
                     </div>
                     <div className={`service-item-block three`}>
-                        <div data-w-id="3e224405-6905-5e4e-88d5-c722a0c8e870" data-is-ix2-target="1"
-                             className={`service-item-lottie three`} data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6059_Animation%20-%201699425848965.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={serviceItemLottieDrei} width='140px'/>
                         <h3 className={`service-item-title three`}>Microservices</h3>
                     </div>
                     <div className={`service-item-block four`}>
@@ -122,40 +175,24 @@ export default function Dashboard() {
                         <h3 className={`service-item-title five`}>React/Typescript</h3>
                     </div>
                     <div className={`service-item-block six`}>
-                        <div data-w-id="e9c7c735-349e-09c1-d8b2-b45429a7807e" data-is-ix2-target="1"
-                             className={`service-item-lottie six`} data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6056_Animation%20-%201699426044837.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={serviceItemLottieSechs} width='140px'/>
                     </div>
                     <div className={`service-item-block seven`}>
                         <h3 className={`service-item-title seven`}>Github, Bitbucket</h3>
                     </div>
                     <div className={`service-item-block four`}>
-                        <div data-w-id="984235a7-77d1-c154-f5a4-fe46ae032310" data-is-ix2-target="1"
-                             className={`service-item-lottie eight`} data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6058_Animation%20-%201699425971194.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={serviceItemLottieVier} width='140px'/>
                         <h3 className="service-item-title eight">RabbitMQ</h3>
                     </div>
                 </div>
                 <div className={`service-bottom-block last`}>
                     <div className={`service-item-block nine`}>
                         <h3 className={`service-item-title nine`}>Docker</h3>
-                        <div data-w-id="b8f58c1e-2f88-cc16-208e-08bc447e2872" data-is-ix2-target="1"
-                             className={`service-item-lottie nine`} data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6052_Animation%20-%201699426451090.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={serviceItemLottieNeun} width='140px'/>
                     </div>
                     <div className={`service-item-block ten`}>
                         <h3 className={`service-item-title`}>Spring AWS</h3>
-                        <div data-w-id="1d0fda4e-bdd3-4ca4-65f6-b0eb862e1692" data-is-ix2-target="1"
-                             className={`service-item-lottie ten`} data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6053_Animation%20-%201699426374970.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={serviceItemLottieZehn} width='140px'/>
                     </div>
                 </div>
             </div>
