@@ -32,7 +32,8 @@ export default function Router() {
           element: <Dashboard  />,
         },
         { path: 'ausbildung', element: <Dashboard /> },
-
+        { path: 'projekte', element: <Projekte /> },
+        { path: 'ausbildung', element: <Ausbildung /> },
       ],
     },
   ]);
@@ -40,5 +41,7 @@ export default function Router() {
 }
 
 const Dashboard = Loadable(lazy(() => import('../pages/Dashboard')));
+const Projekte = Loadable(lazy(() => import('../pages/Projekte')));
+const Ausbildung = Loadable(lazy(() => import('../pages/Ausbildung')));
 
 

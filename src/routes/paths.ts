@@ -16,5 +16,6 @@ export const PATH_HOMEPAGE = {
   general: {
     app: path(ROOTS_HOMEPAGE, '/app'),
   },
-
+  projekte: path(ROOTS_HOMEPAGE, '/projekte'),
+  ausbildung: path(ROOTS_HOMEPAGE, '/ausbildung')
 };

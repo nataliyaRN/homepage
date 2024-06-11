@@ -1,95 +1,27 @@
 import './../dashboard.module.css';
 import React from 'react';
 import Lottie from 'react-lottie';
-import serviceItemLottie1 from './../lotties/serviceItemLottie1.json';
-import serviceItemLottie2 from './../lotties/serviceItemLottie2.json';
-import serviceItemLottie3 from './../lotties/serviceItemLottie3.json';
-import serviceItemLottie4 from './../lotties/serviceItemLottie4.json';
-import serviceItemLottie6 from './../lotties/serviceItemLottie6.json';
-import serviceItemLottie9 from './../lotties/serviceItemLottie9.json';
-import serviceItemLottie10 from './../lotties/serviceItemLottie10.json';
-import heroLottie from './../lotties/hero.json';
 import Header from "../components/Header";
+import {useNavigate} from "react-router-dom";
+
+import {
+    heroLottieOptions,
+    serviceItemLottieDrei,
+    serviceItemLottieEins, serviceItemLottieNeun,
+    serviceItemLottieSechs, serviceItemLottieVier, serviceItemLottieZehn,
+    serviceItemLottieZwei
+} from "./LottiesDefs";
 
 export default function Dashboard() {
-    const serviceItemLottieEins = {
-        loop: true,
-        autoplay: true,
-        duration: true,
-        direction: 1,
-        animationDuration:2.67,
-        animationData: serviceItemLottie1,
-        renderer: 'svg',
 
-    };
-    const serviceItemLottieZwei = {
-        loop: true,
-        autoplay: true,
-        duration: true,
-        direction: 1,
-        animationDuration:2.67,
-        animationData: serviceItemLottie2,
-        renderer: 'svg',
+    const navigate = useNavigate();
+    const navigateToProjekte = () => {
+        navigate('/projekte');
+    }
+    const navigateToAusbildung = () => {
+        navigate('/ausbildung');
+    }
 
-    };
-    const serviceItemLottieDrei  = {
-        loop: true,
-        autoplay: true,
-        duration: true,
-        direction: 1,
-        animationDuration:2.67,
-        animationData: serviceItemLottie3,
-        renderer: 'svg',
-
-    };
-    const serviceItemLottieVier  = {
-        loop: true,
-        autoplay: true,
-        duration: true,
-        direction: 1,
-        animationDuration:2.67,
-        animationData: serviceItemLottie4,
-        renderer: 'svg',
-
-    };
-    const serviceItemLottieSechs  = {
-        loop: true,
-        autoplay: true,
-        duration: true,
-        direction: 1,
-        animationDuration:2.67,
-        animationData: serviceItemLottie6,
-        renderer: 'svg',
-
-    };
-    const serviceItemLottieZehn  = {
-        loop: true,
-        autoplay: true,
-        duration: true,
-        direction: 1,
-        animationDuration:2.67,
-        animationData: serviceItemLottie10,
-        renderer: 'svg',
-
-    };
-    const heroLottieOptions = {
-        loop: true,
-        autoplay: true,
-        duration: true,
-        direction: false,
-        animationDuration:2.67,
-        animationData: heroLottie,
-    };
-    const serviceItemLottieNeun   = {
-        loop: true,
-        autoplay: true,
-        duration: true,
-        direction: 1,
-        animationDuration:2.67,
-        animationData: serviceItemLottie9,
-        renderer: 'svg',
-
-    };
     return <>
     <Header/>
     <section className={`section hero-section`}>
@@ -99,23 +31,18 @@ export default function Dashboard() {
                 <p className="hero-paragraph">Zertifizierte AWS Cloud Practitioner<br/>Frontend Entwicklung mit React,
                     Javascript/Css oder Struts<br/>Entwicklung von Backend basierend auf Spring Boot<br/>Rest
                     Services/Microservices oder Web Services </p>
-                <div className={`hero-button-block`}><a href="/about-us" className={`button-primary w-button`}>Projekte</a><a
-                    href="/contact-us" className={`button-primary outline w-button`}>Ausbildung</a></div>
+                <div className={`hero-button-block`}><a onClick={navigateToProjekte} className={`button-primary w-button`}>Projekte</a><a
+                    onClick={navigateToAusbildung} className={`button-primary outline w-button`}>Ausbildung</a></div>
             </div>
             <div className="hero-image-block">
                 <img
-                    src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d604d_Banner.png"
+                    src={`${process.env.PUBLIC_URL}/img/Banner_big.png`}
                     loading="lazy"
                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1439px) 98vw, 1370px"
                     srcSet="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d604d_Banner-p-500.png 500w, https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d604d_Banner-p-800.png 800w, https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d604d_Banner-p-1080.png 1080w, https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d604d_Banner-p-1600.png 1600w, https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d604d_Banner-p-2000.png 2000w, https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d604d_Banner.png 2001w"
                     alt="image" className="hero-image"/>
                 <Lottie options={heroLottieOptions}  style={{ zIndex: '-1', width: '60%', height: '150%', position: 'absolute',
                     top: '-10%', bottom: 'auto', left: '0%', right: 'auto'}}/>
-                <div data-is-ix2-target="1"
-                     className="hero-lottie-animation" data-animation-type="lottie"
-                     data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d604e_banner.json"
-                     data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                     data-default-duration="2.6666666666666665" data-duration="0"></div>
             </div>
         </div>
     </section>
@@ -126,10 +53,10 @@ export default function Dashboard() {
                     <div className="section-title-block">
                         <h2 className="section-title">Ihre Suche hat ein Ende.</h2>
                     </div>
-                    <p>Mit mir bekommen Sie eine erfahrene Senior Java Entwicklerin, die an sehr vielen Projkten
-                        teilgenommen hat, sowohl in Deutschland als auch in USA und Kanada. Ich kenne mich sehr gut mir
-                        modernen microservice Architektur bzw. mit den älteren monolytischen Applikationen aus. </p>
-                    <a href="/about-us" className={`button-primary margin-top-30 w-button`}>Projekte</a>
+                    <p>Mit mir bekommen Sie eine erfahrene Senior Java Entwicklerin, die an sehr vielen Projekten
+                        teilgenommen hat, sowohl in Deutschland als auch in USA und Kanada. Ich kenne mich sehr gut mit
+                        modernen Microservice Architektur bzw. mit den &auml:lteren monolytischen Applikationen aus. </p>
+                    <a onClick={navigateToProjekte} className={`button-primary margin-top-30 w-button`}>Projekte</a>
                 </div>
                 <div className="about-right-side"><img
                     src={`${process.env.PUBLIC_URL}/img/about.svg`}
@@ -314,7 +241,7 @@ export default function Dashboard() {
                             </div>
                         </li>
                     </ul>
-                    <a href="/contact-us" className={`button-primary margin-top-30 w-button`}>contact us</a>
+                    <a href="/kontakt" className={`button-primary margin-top-30 w-button`}>contact us</a>
                 </div>
             </div>
             <div data-w-id="e7525777-ee1b-88ed-cce4-375b43537535" data-is-ix2-target="1" className="about-v2-lottie"
@@ -324,10 +251,9 @@ export default function Dashboard() {
                  data-default-duration="2.6666666666666665" data-duration="0"></div>
         </div>
     </section>
-    <script src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=662aa988ec0fb101157d5ff4"
+    <script src={`${process.env.PUBLIC_URL}/js/jquery.js`}
             type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossOrigin="anonymous"></script>
-    <script src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/js/webflow.d7ba3d860.js"
-            type="text/javascript"></script>
+
     </>;
 }
