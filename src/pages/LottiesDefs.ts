@@ -14,10 +14,6 @@ import requestAMeetingEndeLottie from "../lotties/requestAMeetingEnde.json";
 import receiveCustomPlanLottie from "../lotties/receiveCustomPlan.json";
 import processThreeLottie from "../lotties/03.json";
 
-export default function LottiesDefs() {
-
-
-}
 
 export const serviceItemLottieEins = {
     loop: true,

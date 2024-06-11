@@ -21,6 +21,7 @@ import {
     serviceItemLottieZehn,
     serviceItemLottieZwei
 } from "./LottiesDefs";
+import Page from "../components/Page";
 
 export default function Dashboard() {
 
@@ -32,7 +33,7 @@ export default function Dashboard() {
         navigate('/ausbildung');
     }
 
-    return <>
+    return <Page title='Nataliza Wierts'>
     <Header/>
     <section className={`section hero-section`}>
         <div className={`w-layout-blockcontainer container w-container`}>
@@ -230,5 +231,5 @@ export default function Dashboard() {
     <script src={`${process.env.PUBLIC_URL}/js/jquery.js`}
             type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossOrigin="anonymous"></script>
-    </>;
+    </Page>;
 }

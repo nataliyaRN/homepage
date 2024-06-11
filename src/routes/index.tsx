@@ -1,7 +1,7 @@
 import { Suspense, lazy, ElementType } from 'react';
-import { createBrowserRouter, Navigate, RouterProvider, useLocation } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, useLocation } from 'react-router-dom';
 import LoadingScreen from "../components/LoadingScreen";
-import {PATH_HOMEPAGE} from "./paths";
+
 
 
 const Loadable = (Component: ElementType) => (props: any) => {
@@ -20,7 +20,6 @@ const Loadable = (Component: ElementType) => (props: any) => {
 };
 
 export default function Router() {
-  const queryParams = new URLSearchParams(window.location.search);
 
   const router = createBrowserRouter([
 
@@ -31,7 +30,7 @@ export default function Router() {
           path: '',
           element: <Dashboard  />,
         },
-        { path: 'ausbildung', element: <Dashboard /> },
+        { path: 'dashboard', element: <Dashboard /> },
         { path: 'projekte', element: <Projekte /> },
         { path: 'ausbildung', element: <Ausbildung /> },
       ],
