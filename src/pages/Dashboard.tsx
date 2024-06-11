@@ -5,10 +5,20 @@ import Header from "../components/Header";
 import {useNavigate} from "react-router-dom";
 
 import {
+    aboutLottieDef,
+    chooseAServiceDef,
     heroLottieOptions,
+    processLottieDef,
+    processThreeDef,
+    receiveCustomPlanDef,
+    requestAMeetingEndeDef,
+    requestAMeetingLottieDef,
     serviceItemLottieDrei,
-    serviceItemLottieEins, serviceItemLottieNeun,
-    serviceItemLottieSechs, serviceItemLottieVier, serviceItemLottieZehn,
+    serviceItemLottieEins,
+    serviceItemLottieNeun,
+    serviceItemLottieSechs,
+    serviceItemLottieVier,
+    serviceItemLottieZehn,
     serviceItemLottieZwei
 } from "./LottiesDefs";
 
@@ -128,76 +138,46 @@ export default function Dashboard() {
     <section className={`section process-section`}>
         <div className={`w-layout-blockcontainer container-small w-container`}>
             <div className={`section-title-block text-center`}>
-                <h2 className={`section-title text-white`}>Services That Help You Grow</h2>
+                <h2 className={`section-title text-white`}>Lassen Sie Ihr Gesch&auml;ft wachsen</h2>
             </div>
             <div className="process-main-block">
                 <div className="process-block">
                     <div className="process-number-block">
-                        <div data-w-id="61b4be50-39a8-ef81-5d93-5ad17786fc36" data-is-ix2-target="1"
-                             className="process-lottie" data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d605c_Animation%20-%201699504802273.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={processLottieDef} width='60px'/>
                         <div className="process-number">01</div>
                     </div>
-                    <h3 className="process-title">Choose a Service</h3>
-                    <p className="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                        interdum nulla, ut commodo diam libero vitae erat.</p>
-                    <div data-w-id="0f920c48-a90f-7c31-e27f-3b99d24501ef" data-is-ix2-target="1"
-                         className="process-one-lottie" data-animation-type="lottie"
-                         data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d605b_Animation%20-%201699505240497.json"
-                         data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                         data-default-duration="2.6666666666666665" data-duration="0"></div>
+                    <h3 className="process-title">Holen Sie sich Hilfe beim Anforderungsanalyse</h3>
+                    <p className="process-paragraph">Wenn Sie eine gute Idee haben,
+                        die bestimmte Probleme mithilfe von der IT l&ouml:sen kann, holen Sie sich mich
+                        um Ihnen bei der Anforedungsanalyse und Definition zu helfen.</p>
+                    <Lottie options={chooseAServiceDef} width='180px'/>
                 </div>
                 <div className="process-block">
                     <div className="process-number-block">
-                        <div data-w-id="c4ee3cf8-96b9-7407-13dd-0a104378b96d" data-is-ix2-target="1"
-                             className="process-lottie" data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d605c_Animation%20-%201699504802273.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={requestAMeetingLottieDef} width='60px'/>
                         <div className="process-number">02</div>
                     </div>
-                    <h3 className="process-title">Request a Meeting</h3>
-                    <p className="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-                        varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
-                        interdum nulla, ut commodo diam libero vitae erat.</p>
-                    <div data-w-id="27890f42-a0a7-4425-e8f3-9a168833adbf" data-is-ix2-target="1"
-                         className="process-two-lottie" data-animation-type="lottie"
-                         data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d605d_Animation%20-%201699504765259.json"
-                         data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                         data-default-duration="2.6666666666666665" data-duration="0"></div>
+                    <h3 className="process-title">Vereinbaren Sie ein Vorstellungsgespr&auml;ch </h3>
+                    <p className="process-paragraph">Lassen Sie uns Ihre Ziele besprechen und wie wir sie zusammen erreichen k&ouml;nnen.</p>
+                    <Lottie options={requestAMeetingEndeDef} width='160px' />
                 </div>
                 <div className="process-block">
                     <div className="process-number-block">
-                        <div data-w-id="96da6b22-72d9-e814-6471-fa10365b9ac7" data-is-ix2-target="1"
-                             className="process-lottie" data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d605c_Animation%20-%201699504802273.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={receiveCustomPlanDef} width='60px' />
                         <div className="process-number">03</div>
                     </div>
-                    <h3 className="process-title">Receive Custom Plan</h3>
+                    <h3 className="process-title">Lassen Sie sich von M&ouml;glichkeiten begeistern</h3>
                     <p className="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                         varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
                         interdum nulla, ut commodo diam libero vitae erat.</p>
-                    <div data-w-id="110c3b0f-46e8-7bae-25fa-49a1fced506d" data-is-ix2-target="1"
-                         className="process-three-lottie" data-animation-type="lottie"
-                         data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d608b_Animation%20-%201700201369117.json"
-                         data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                         data-default-duration="2.6666666666666665" data-duration="0"></div>
+                    <Lottie options={processThreeDef} width='160px' />
                 </div>
                 <div className={`process-block last`}>
                     <div className="process-number-block">
-                        <div data-w-id="18d58331-c759-1ecb-5140-067297a29449" data-is-ix2-target="1"
-                             className="process-lottie" data-animation-type="lottie"
-                             data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d605c_Animation%20-%201699504802273.json"
-                             data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                             data-default-duration="2.6666666666666665" data-duration="0"></div>
+                        <Lottie options={receiveCustomPlanDef} width='60px' />
                         <div className="process-number">04</div>
                     </div>
-                    <h3 className="process-title">Let’s Make it Happen.</h3>
+                    <h3 className="process-title">Ran an die Arbeit!</h3>
                     <p className="process-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
                         varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor
                         interdum nulla, ut commodo diam libero vitae erat.</p>
@@ -208,17 +188,17 @@ export default function Dashboard() {
     <section className={`section about-v2-section`}>
         <div className={`w-layout-blockcontainer container w-container`}>
             <div className={`w-layout-grid about-v2-grid`}>
-                <div id="w-node-_52b7b2a1-9bd7-adc7-2ae8-690a920b4d6a-157d6044" className="about-v2-left-side"><img
-                    src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6060_1.svg"
+                <div className="about-v2-left-side"><img
+                    src={`${process.env.PUBLIC_URL}/img/fixeStars.svg`}
                     loading="lazy" alt="image" className="about-v2-image"/></div>
-                <div id="w-node-_344e9735-4696-d2a0-c8a7-effa5f99f4c2-157d6044" className="about-v2-right-side">
+                <div className="about-v2-right-side">
                     <div className="section-title-block">
-                        <h2 className="section-title">We Can Take Your Business</h2>
+                        <h2 className="section-title">Ihre Kunden werden begeistert</h2>
                     </div>
                     <ul role="list" className="about-v2-list">
                         <li className="about-v2-list-item">
                             <img
-                                src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6061_fi_2985162.png"
+                                src={`${process.env.PUBLIC_URL}/img/pfeil.png`}
                                 loading="lazy" alt="image" className="about-v2-list-icon"/>
                             <div className="about-v2-list-text">Access the strategies and talent powering the biggest
                                 creators and achieve YouTube goals, faster.
@@ -226,7 +206,7 @@ export default function Dashboard() {
                         </li>
                         <li className="about-v2-list-item">
                             <img
-                                src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6061_fi_2985162.png"
+                                src={`${process.env.PUBLIC_URL}/img/pfeil.png`}
                                 loading="lazy" alt="image" className="about-v2-list-icon"/>
                             <div className="about-v2-list-text">Access the strategies and talent powering the biggest
                                 creators and achieve YouTube goals, faster.
@@ -234,26 +214,21 @@ export default function Dashboard() {
                         </li>
                         <li className="about-v2-list-item">
                             <img
-                                src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6061_fi_2985162.png"
+                                src={`${process.env.PUBLIC_URL}/img/pfeil.png`}
                                 loading="lazy" alt="image" className="about-v2-list-icon"/>
                             <div className="about-v2-list-text">Access the strategies and talent powering the biggest
                                 creators and achieve YouTube goals, faster.
                             </div>
                         </li>
                     </ul>
-                    <a href="/kontakt" className={`button-primary margin-top-30 w-button`}>contact us</a>
+                    <a href="/kontakt" className={`button-primary margin-top-30 w-button`}>Kontakt</a>
                 </div>
             </div>
-            <div data-w-id="e7525777-ee1b-88ed-cce4-375b43537535" data-is-ix2-target="1" className="about-v2-lottie"
-                 data-animation-type="lottie"
-                 data-src="https://assets-global.website-files.com/662aa988ec0fb101157d5ff4/662aa988ec0fb101157d6062_Animation%20-%201699522569962.json"
-                 data-loop="0" data-direction="1" data-autoplay="0" data-renderer="svg"
-                 data-default-duration="2.6666666666666665" data-duration="0"></div>
+            <Lottie options={aboutLottieDef} width='160px'/>
         </div>
     </section>
     <script src={`${process.env.PUBLIC_URL}/js/jquery.js`}
             type="text/javascript" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
             crossOrigin="anonymous"></script>
-
     </>;
 }

@@ -2139,7 +2139,6 @@ body {
 }
 
 h1 {
-    text-transform: capitalize;
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 72px;
@@ -2148,7 +2147,6 @@ h1 {
 }
 
 h2 {
-    text-transform: capitalize;
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 64px;
@@ -2157,7 +2155,6 @@ h2 {
 }
 
 h3 {
-    text-transform: capitalize;
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 52px;
@@ -2166,7 +2163,6 @@ h3 {
 }
 
 h4 {
-    text-transform: capitalize;
     margin-top: 0;
     margin-bottom: 10px;
     font-size: 32px;
@@ -2979,26 +2975,6 @@ blockquote {
     right: 30%;
 }
 
-.team-main-block {
-    border-top: 1px solid rgba(30, 58, 43, .1);
-    margin-top: 60px;
-}
-
-.testimonial-section-title-block {
-    grid-column-gap: 25px;
-    grid-row-gap: 25px;
-    align-items: center;
-    display: flex;
-}
-
-.testimonial-image {
-    width: 80px;
-}
-
-.testimonial-main-title-block {
-    margin-bottom: 20px;
-}
-
 .faq-grid {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
@@ -3060,173 +3036,6 @@ blockquote {
     bottom: auto;
     left: auto;
     right: 20%;
-}
-
-.team-list-item-link {
-    border-bottom: 1px solid rgba(30, 58, 43, .1);
-    justify-content: space-between;
-    padding: 30px;
-    display: flex;
-    position: relative;
-}
-
-.team-list-item-link:hover {
-    background-color: var(--white);
-    color: var(--dark);
-    border-radius: 10px;
-}
-
-.team-image-block {
-    z-index: 1;
-    position: absolute;
-    top: -60%;
-    bottom: 0%;
-    left: auto;
-    right: 15%;
-}
-
-.team-image-inner-block {
-    width: 30vh;
-    height: 30vh;
-}
-
-.team-image {
-    object-fit: cover;
-    border-radius: 10px;
-}
-
-.team-detail-block {
-    grid-column-gap: 40px;
-    grid-row-gap: 40px;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-columns: 1fr;
-    justify-content: space-between;
-    align-items: center;
-    justify-items: stretch;
-    width: 100%;
-    display: grid;
-}
-
-.team-title {
-    margin-bottom: 0;
-    font-size: 38px;
-}
-
-.team-icon {
-    text-align: center;
-    width: 30px;
-    font-family: "Fa Solid 900", sans-serif;
-    font-size: 28px;
-}
-
-.testimonial-slider {
-    background-color: rgba(0, 0, 0, 0);
-    height: auto;
-    margin-top: 60px;
-    position: static;
-}
-
-.testimonial-slide-nav {
-    display: none;
-}
-
-.testimonial-mask {
-    width: 596px;
-    position: static;
-    overflow: visible;
-}
-
-.testimonial-slide {
-    margin-right: 30px;
-}
-
-.testimonial-info-block {
-    grid-column-gap: 20px;
-    grid-row-gap: 20px;
-    align-items: center;
-    display: flex;
-}
-
-.testimonial-paragraph {
-    margin-top: 30px;
-    margin-bottom: 0;
-    font-style: italic;
-}
-
-.testimonial-member-name {
-    margin-bottom: 0;
-    font-size: 28px;
-}
-
-.testimonial-block {
-    border-radius: 10px;
-    padding: 30px;
-}
-
-.testimonial-block.first {
-    background-color: var(--white);
-}
-
-.testimonial-block.second {
-    background-color: var(--primary);
-}
-
-.testimonial-block.three {
-    background-color: var(--secondary);
-}
-
-.testimonial-position {
-    text-transform: uppercase;
-    font-weight: 500;
-}
-
-.testimonial-image-inner {
-    border-radius: 100%;
-    width: 100px;
-}
-
-.testimonial-left-arrow {
-    background-color: var(--white);
-    border-radius: 100%;
-    width: 58px;
-    height: 58px;
-    line-height: 58px;
-    transition: all .2s;
-    top: 0%;
-    bottom: auto;
-    left: auto;
-    right: 6%;
-}
-
-.testimonial-left-arrow:hover {
-    background-color: var(--secondary);
-}
-
-.testimonial-right-arrow {
-    background-color: var(--white);
-    border-radius: 100%;
-    width: 58px;
-    height: 58px;
-    line-height: 58px;
-    transition: all .2s;
-    top: 0%;
-    bottom: auto;
-    left: auto;
-    right: 0%;
-}
-
-.testimonial-right-arrow:hover {
-    background-color: var(--secondary);
-}
-
-.testimonial-icon {
-    color: var(--dark);
-    font-size: 24px;
-}
-
-.testimonial-bottom-block {
-    position: relative;
 }
 
 .footer {
@@ -3588,7 +3397,6 @@ blockquote {
 }
 
 .hero-v2-subtitle {
-    text-transform: capitalize;
     margin-top: 15px;
 }
 
@@ -3739,7 +3547,6 @@ blockquote {
 }
 
 .service-info-sub-title {
-    text-transform: capitalize;
     margin-bottom: 10px;
 }
 
@@ -4398,7 +4205,6 @@ blockquote {
 }
 
 .dark-link {
-    text-transform: capitalize;
     display: inline-block;
 }
 
