@@ -4,14 +4,7 @@ import Lottie from 'react-lottie';
 import {useNavigate} from "react-router-dom";
 
 import {
-    aboutLottieDef,
-    chooseAServiceDef,
     heroLottieOptions,
-    processLottieDef,
-    processThreeDef,
-    receiveCustomPlanDef,
-    requestAMeetingEndeDef,
-    requestAMeetingLottieDef,
     serviceItemLottieDrei,
     serviceItemLottieEins,
     serviceItemLottieNeun,
@@ -37,7 +30,8 @@ export default function Dashboard() {
     <section className={`section hero-section`}>
         <div className={`w-layout-blockcontainer container w-container`}>
             <div className={`hero-title-main-block`}>
-                <h1 className="hero-heading">Java Full Stack Developer</h1>
+                <h1 className="hero-heading">Nataliya Wierts</h1>
+                <h2 className="section-title">Java Full Stack Developer</h2>
                 <p className="hero-paragraph">Zertifizierte AWS Cloud Practitioner<br/>Frontend Entwicklung mit React,
                     Javascript/Css oder Struts<br/>Entwicklung von Backend basierend auf Spring Boot<br/>Rest
                     Services/Microservices oder Web Services </p>
@@ -46,7 +40,7 @@ export default function Dashboard() {
                     onClick={navigateToAusbildung} className={`button-primary outline w-button`}>Ausbildung</Link></div>
             </div>
             <div className="hero-image-block">
-                <img
+            <img
                     src={`${process.env.PUBLIC_URL}/img/Banner_big.png`}
                     loading="lazy"
                     sizes="(max-width: 479px) 100vw, (max-width: 767px) 96vw, (max-width: 991px) 97vw, (max-width: 1439px) 98vw, 1370px"
