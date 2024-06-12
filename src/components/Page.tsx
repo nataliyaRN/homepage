@@ -1,7 +1,8 @@
 import { Helmet } from 'react-helmet-async';
-import { forwardRef, ReactNode } from 'react';
+import React, { forwardRef, ReactNode } from 'react';
 // @mui
 import { Box, BoxProps } from '@mui/material';
+import Header from "./Header";
 
 // ----------------------------------------------------------------------
 
@@ -18,6 +19,7 @@ const Page = forwardRef<HTMLDivElement, Props>(({ children, title = '', meta, ..
         </Helmet>
 
         <Box ref={ref} {...other}>
+            <Header/>
             {children}
         </Box>
     </>
