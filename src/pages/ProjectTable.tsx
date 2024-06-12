@@ -39,19 +39,24 @@ export default function ProjectTable({id, time, businessDesc, stack, place}: Pro
                 <TableRow
                     key={id}
                     sx={{ '&:last-child td, &:last-child th': { border: 0 } }} className='table-body'>
-
                     <TableCell className='table-body'>
                         <IconButton
                             aria-label='expand row'
                             size='small'
-                            sx={{backgroundColor:'#6d9a8b'}}
+                            sx={{backgroundColor:'#6d9a8b', color:'white'}}
                             onClick={() => setOpen(!open)}>
                             {open ? <KeyboardArrowUpIcon /> : <KeyboardArrowDownIcon />}
                         </IconButton>
                     </TableCell>
-                    <TableCell component="th" scope="row" className='table-body'>{time}</TableCell>
-                    <TableCell align="left" className='table-body'>{place}</TableCell>
-                    <TableCell align="left" className='table-body'>{businessDesc}</TableCell>
+                    <TableCell component="th" scope="row" className='table-body'>
+                        <Typography sx={{fontSize: '0.875rem'}}>{time}</Typography>
+                    </TableCell>
+                    <TableCell align="left" className='table-body'>
+                        <Typography sx={{fontSize: '0.875rem'}}>{place}</Typography>
+                    </TableCell>
+                    <TableCell align="left" className='table-body'>
+                        <Typography sx={{fontSize: '0.875rem'}}>{businessDesc}</Typography>
+                    </TableCell>
                 </TableRow>
                 <TableRow>
                     <TableCell className='table-collapsible' colSpan={4}>
