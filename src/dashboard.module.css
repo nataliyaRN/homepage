@@ -2650,6 +2650,24 @@ blockquote {
     position: relative;
 }
 
+.table-header {
+    background-color:#052218;
+    color: white;
+}
+
+.table-body {
+    background-color:#256751;
+    color: white;
+}
+
+.table-collapsible {
+    paddingBottom: 0;
+    paddingTop: 0;
+    backgroundColor:#0b4e37;
+    color:white;
+}
+
+
 .about-grid {
     grid-column-gap: 40px;
     grid-row-gap: 40px;
