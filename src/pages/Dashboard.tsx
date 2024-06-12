@@ -33,7 +33,7 @@ export default function Dashboard() {
                 <h1 className="hero-heading">Nataliya Wierts</h1>
                 <h2 className="section-title">Java Full Stack Developer</h2>
                 <p className="hero-paragraph">Zertifizierte AWS Cloud Practitioner<br/>Frontend Entwicklung mit React,
-                    Javascript/Css oder Struts<br/>Entwicklung von Backend basierend auf Spring Boot<br/>Rest
+                    Javascript/CSS oder Struts<br/>Entwicklung von Backend basierend auf Spring Boot<br/>Rest
                     Services/Microservices oder Web Services </p>
                 <div className={`hero-button-block`}>
                     <Link onClick={navigateToProjekte} className={`button-primary w-button`}>Projekte</Link><Link

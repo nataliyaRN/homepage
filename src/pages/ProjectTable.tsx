@@ -55,9 +55,11 @@ export default function ProjectTable({id, time, businessDesc, stack, place}: Pro
                 <TableRow>
                     <TableCell style={{ paddingBottom: 0, paddingTop: 0 }} colSpan={4}>
                         <Collapse in={open} timeout="auto" unmountOnExit>
-                            <Box sx={{ margin: 1 }}>
-                                <Typography  gutterBottom component="div" style={{whiteSpace: "pre-wrap"}}>
-                                    {stack}
+                            <Box sx={{ margin: 1 }} >
+                                <Typography  gutterBottom component="div">
+                                    {stack.split("&").map((curs, idx) => (
+                                        <Typography style={{fontSize: '0.875rem'}} key={idx}>{curs}</Typography>
+                                    ))}
                                 </Typography>
                             </Box>
                         </Collapse>
