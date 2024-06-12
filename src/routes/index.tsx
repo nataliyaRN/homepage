@@ -40,7 +40,7 @@ export default function Router() {
 }
 
 const Dashboard = Loadable(lazy(() => import('../pages/Dashboard')));
-const Projekte = Loadable(lazy(() => import('../pages/Projekte')));
-const Ausbildung = Loadable(lazy(() => import('../pages/Ausbildung')));
+const Projekte = Loadable(lazy(() => import('../pages/Projects')));
+const Ausbildung = Loadable(lazy(() => import('../pages/Education')));
 
 

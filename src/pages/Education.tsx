@@ -3,7 +3,7 @@ import Lottie from "react-lottie";
 import {aboutLottieDef} from "./LottiesDefs";
 import React from "react";
 
-export default function Ausbildung() {
+export default function Education() {
     return <Page title='Nataliya Wierts'>
         <section className={`section about-v2-section`}>
             <div className={`w-layout-blockcontainer container w-container`}>

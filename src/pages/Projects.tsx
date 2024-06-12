@@ -8,24 +8,43 @@ import {
     requestAMeetingLottieDef
 } from "./LottiesDefs";
 import React from "react";
+import ProjectTable from "./ProjectTable";
 
-export default function Projekte() {
+
+export default function Projects() {
     return <Page title='Nataliya Wierts'>
         <section className={`section process-section`}>
             <div className={`w-layout-blockcontainer container-small w-container`}>
                 <div className={`section-title-block text-center`}>
-                    <h2 className={`section-title text-white`}>Lassen Sie Ihr Gesch&auml;ft wachsen</h2>
+                    <h2 className={`section-title text-white`}>Projekte</h2>
                 </div>
                 <div className="process-main-block">
                     <div className="process-block">
                         <div className="process-number-block">
                             <Lottie options={processLottieDef} width='60px'/>
-                            <div className="process-number">01</div>
+                            <div className="process-number">ComDirect (Commerzbank AG)</div>
                         </div>
-                        <h3 className="process-title">Holen Sie sich Hilfe beim Anforderungsanalyse</h3>
-                        <p className="process-paragraph">Wenn Sie eine gute Idee haben,
-                            die bestimmte Probleme mithilfe von der IT l&ouml:sen kann, holen Sie sich mich
-                            um Ihnen bei der Anforedungsanalyse und Definition zu helfen.</p>
+                        <ProjectTable id='commerz'
+                                      time='08.2024 - bis jetzt'
+                                      businessDesc='Entwicklung von der Echtzeit&uuml;berweissungen'
+                                      stack='Java'
+                                      place='Quintorf'
+                        />
+                        <h3 className="process-title">Financial Services</h3>
+                        <ProjectTable id='pollard'
+                                      time='12.2022 - 06.2024'
+                                      businessDesc='Entwicklung des Verwaltungssystem mit Prognose von den Sales'
+                                      stack='Java 17/21
+                                            Microservices auf AWS
+                                            ReactJS und Typescript
+                                            Spring Cloud
+                                            Spring RestApi
+                                            Spring Boot
+                                            Spring Batch
+                                            Hibernate
+                                            Maven/Nexus/GIT (Bitbucket)'
+                                      place='Winnipeg, Kanada'
+                        />
                         <Lottie options={chooseAServiceDef} width='180px'/>
                     </div>
                     <div className="process-block">
