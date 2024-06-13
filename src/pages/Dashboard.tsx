@@ -14,7 +14,7 @@ import {
     serviceItemLottieZwei
 } from "./LottiesDefs";
 import Page from "../components/Page";
-import {Link} from "@mui/material";
+import {Link, Typography} from "@mui/material";
 
 export default function Dashboard() {
 
@@ -30,7 +30,7 @@ export default function Dashboard() {
     <section className={`section hero-section`}>
         <div className={`w-layout-blockcontainer container w-container`}>
             <div className={`hero-title-main-block`}>
-                <h1 className="hero-heading">Nataliya Wierts</h1>
+                <Typography component='h3' className='hero-heading'>Nataliya Wierts</Typography>
                 <h2 className="section-title">Java Full Stack Developer</h2>
                 <p className="hero-paragraph">Zertifizierte AWS Cloud Practitioner<br/>Frontend Entwicklung mit React,
                     Javascript/CSS oder Struts<br/>Entwicklung von Backend basierend auf Spring Boot<br/>Rest

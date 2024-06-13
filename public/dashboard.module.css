@@ -2627,6 +2627,8 @@ blockquote {
     padding-left: 10%;
     padding-right: 10%;
     font-size: 78px;
+    font-weight:600;
+    margin-top:25px;
 }
 
 .hero-paragraph {

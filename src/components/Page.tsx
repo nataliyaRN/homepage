@@ -13,12 +13,12 @@ interface Props extends BoxProps {
 }
 const Page = forwardRef<HTMLDivElement, Props>(({ children, title = '', meta, ...other }, ref) => (
     <>
-        <Helmet>
+        <Helmet >
             <title>{title} </title>
             {meta}
         </Helmet>
 
-        <Box ref={ref} {...other}>
+        <Box ref={ref} {...other} style={{height:'100%', backgroundColor:'var(--gray)'}}>
             <Header/>
             {children}
         </Box>
