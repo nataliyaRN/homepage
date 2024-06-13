@@ -16,12 +16,12 @@ export default function Projects() {
         <section className={`section process-section`}>
             <div className={`w-layout-blockcontainer container-small w-container`}>
                 <div className={`section-title-block text-center`}>
-                    <h2 className={`section-title text-white`}>Projekte</h2>
+                    <h2 className={`section-title text-dark`}>Projekte</h2>
                 </div>
                 <div className="process-main-block">
                     <div className="process-block">
-                        <div className="process-number-block">
-                            <Lottie options={processLottieDef} width='60px'/>
+                        <div className={`process-number-block process-number`}>
+                            <Lottie options={processLottieDef} width='60px' style={{color:'black'}}/>
                             <div className="process-number">ComDirect (Commerzbank AG)</div>
                         </div>
                         <ProjectTable id='commerz'
@@ -31,7 +31,7 @@ export default function Projects() {
                                       place='Quintorf'
                         />
                         <Lottie options={chooseAServiceDef} width='180px' style={{marginTop: '15px'}}/>
-                        <h3 className="process-title">Financial Services</h3>
+                        <h3 className={`process-number`}>Financial Services</h3>
                         <ProjectTable id='pollard'
                                       time='12.2022 - 06.2024'
                                       businessDesc='Entwicklung des Verwaltungssystem mit Prognose von den Sales'
@@ -201,7 +201,7 @@ export default function Projects() {
                     </div>
                     <div className={`process-block last`}>
                         <div className="process-number-block">
-                            <Lottie options={requestAMeetingEndeDef} width='160px' />
+                            <Lottie options={requestAMeetingEndeDef} width='160px'/>
                             <div className="process-number">Immobilienscout24 (Scout24 SE)</div>
                         </div>
                         <ProjectTable id='is24'

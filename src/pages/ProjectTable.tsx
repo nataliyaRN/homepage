@@ -7,7 +7,6 @@ import {
     TableBody,
     TableCell,
     TableContainer,
-    TableHead,
     TableRow, Typography
 } from "@mui/material";
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';

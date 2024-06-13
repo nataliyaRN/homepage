@@ -4,6 +4,7 @@ import LoadingScreen from "../components/LoadingScreen";
 
 
 
+
 const Loadable = (Component: ElementType) => (props: any) => {
   // eslint-disable-next-line react-hooks/rules-of-hooks
   const { pathname } = useLocation();
@@ -33,6 +34,7 @@ export default function Router() {
         { path: 'dashboard', element: <Dashboard /> },
         { path: 'projekte', element: <Projekte /> },
         { path: 'ausbildung', element: <Ausbildung /> },
+        { path: 'kontakt', element: <Kontakt /> },
       ],
     },
   ]);
@@ -42,5 +44,6 @@ export default function Router() {
 const Dashboard = Loadable(lazy(() => import('../pages/Dashboard')));
 const Projekte = Loadable(lazy(() => import('../pages/Projects')));
 const Ausbildung = Loadable(lazy(() => import('../pages/Education')));
+const Kontakt = Loadable(lazy(() => import('../pages/Kontakt')));
 
 

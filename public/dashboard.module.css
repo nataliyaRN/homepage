@@ -2509,7 +2509,7 @@ blockquote {
 }
 
 .section.process-section {
-    background-color: var(--dark);
+    background-color: var(--gray);
     border-radius: 10px;
     margin-left: 15px;
     margin-right: 15px;
@@ -2880,7 +2880,6 @@ blockquote {
 }
 
 .process-number {
-    color: var(--white);
     padding-top: 10px;
     font-size: 28px;
     font-weight: 700;

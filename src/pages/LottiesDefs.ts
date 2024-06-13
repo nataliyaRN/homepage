@@ -103,7 +103,6 @@ export const processLottieDef  = {
     animationDuration:2.67,
     animationData: processLottie,
     renderer: 'svg',
-
 };
 
 export const aboutLottieDef   = {
