@@ -20,7 +20,7 @@ export default function Header() {
     }
 
     return (
-        <AppBar position='static' className={`container w-container`} style={{backgroundColor:'var(--gray)'}}>
+        <AppBar style={{backgroundColor:'var(--gray)'}}>
             <Toolbar className={`navbar-wrap`}>
                 <IconButton className={`brand w-nav-brand`} size='large' area-label='logo' edge='start'>
                     <IntegrationInstructionsIcon/>
