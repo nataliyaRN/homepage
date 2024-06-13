@@ -14,7 +14,7 @@ export default function Projects() {
             companyName: 'ComDirect (Commerzbank AG)',
             id:'commerz',
             time:'08.2024 - bis jetzt',
-            businessDesc:'Entwicklung von der Echtzeit&uuml;berweissungen',
+            businessDesc:'Entwicklung von der Echtzeitüberweissungen',
             stack:'Java',
             place:'Quintorf',
         },
@@ -23,44 +23,44 @@ export default function Projects() {
             id:'polard',
             time:'12.2022 - 06.2024',
             businessDesc:'Entwicklung des Verwaltungssystem mit Prognose von den Sales',
-            stack:'Java 17/21' +
-                'Microservices auf AWS'+
-                'ReactJS und Typescript'+
-                'Spring Cloud'+
-                'Spring RestApi'+
-                'Spring Boot'+
-                'Spring Batch'+
-                'Hibernate'+
-                'Maven/Nexus/GIT (Bitbucket)'+
-                'Datenbank: Mysql'+
-                'Tools: JIRA, Confluence, Rancher, AWS Console, Liquibase'+
-                'Intellij'+
-                'Scrum',
+            stack:'Java 17/21\n' +
+                'Microservices auf AWS\n'+
+                'ReactJS und Typescript\n'+
+                'Spring Cloud\n'+
+                'Spring RestApi\n'+
+                'Spring Boot\n'+
+                'Spring Batch\n'+
+                'Hibernate\n'+
+                'Maven/Nexus/GIT (Bitbucket)\n'+
+                'Datenbank: Mysql\n'+
+                'Tools: JIRA, Confluence, Rancher, AWS Console, Liquibase\n'+
+                'Intellij\n'+
+                'Scrum\n',
             place:'Winnipeg, Kanada'
         },
         {
             companyName: 'Finanzinformatik GmbH & Co. KG',
             id:'finanzinfomatik',
             time:'04.2017-10.2022',
-            businessDesc:'(1)Entwicklung der Posonalsysteme in OSPE. (2)Entwicklung von der GUI und Backend'+
-            '(RestAPI und WebServices) f&auml;r die Verwaltung von Telefonie f&uuml;r'+
-            'die Sparkassen Mitarbeiter (Avaya). Verwaltungsf&auml;lle: Namens&auml;nderung'+
-            'z.B. beim Heirat, L&ouml;schen von den Mitarbeiterdaten in'+
-            'allen Avaya Komponenten (RestAPI und XML WebServices Anfragen)'+
+            businessDesc:'(1) Entwicklung der Posonalsysteme in OSPE. \n(2) Entwicklung von der GUI und Backend\n'+
+            '(RestAPI und WebServices) für die Verwaltung von Telefonie für\n'+
+            'die Sparkassen Mitarbeiter (Avaya). Verwaltungsfälle: Namensänderung\n'+
+            'z.B. beim Heirat, Löschen von den Mitarbeiterdaten in\n'+
+            'allen Avaya Komponenten (RestAPI und XML WebServices Anfragen)\n'+
             'und LDAP.',
-            stack:'Java 8'+
-            'Rest Services (client und server) mit Spring'+
-            'Spring Batch'+
-            'Spring Web services (client und server)'+
-            'Spring Security LDAP'+
-            'Spring Security (Authentifizierung gegen LDAP bzw. gegen Datenbank'+
-            'je nach Benutzer, der sich anmeldet)'+
-            'Bootstrap 4'+
-            'ORM: JPA (Hibernate), Liquibase'+
-            'Datenbank: Oracle 12'+
-            'Server: WebSphere 8'+
-            'Testing: JUnit , Mockito'+
-            'Tools: Jenkins, Maven 3, Intellij, JIRA, SVN',
+            stack:'Java 8\n'+
+            'Rest Services (client und server) mit Spring\n'+
+            'Spring Batch\n'+
+            'Spring Web services (client und server)\n'+
+            'Spring Security LDAP\n'+
+            'Spring Security (Authentifizierung gegen LDAP bzw. gegen Datenbank\n'+
+            'je nach Benutzer, der sich anmeldet)\n'+
+            'Bootstrap 4\n'+
+            'ORM: JPA (Hibernate), Liquibase\n'+
+            'Datenbank: Oracle 12\n'+
+            'Server: WebSphere 8\n'+
+            'Testing: JUnit , Mockito\n'+
+            'Tools: Jenkins, Maven 3, Intellij, JIRA, SVN\n',
             place:'Hannover, Deutschland'
         },
         {
@@ -69,18 +69,18 @@ export default function Projects() {
             time:'10.2016-03.2017',
             businessDesc:'Entwicklung der Backend für die Reservierung'+
             'von Autos, Verwaltung von Mietstationen, Verf&uuml;gbarkeiten.',
-            stack:'Java 8'+
-            'XML/DTD'+
-            'XPath'+
-            'REST Services (Resteasy),'+
-            'SOAP XML Web Services client'+
-            'Frontend: AngularJS,'+
-            'EJB 3.1, JEE 6'+
-            'ORM: JPA (Hibernate), Liquibase'+
-            'Datenbank: PostgreSQL'+
-            'Server: JBOSS EAP 6.4 (7.5)'+
-            'Testing: Arquillian, JUnit 4, DBUnit'+
-            'Tools: Jenkins, Maven 3, Intellij, Polarion/JIRA, Deployment auf'+
+            stack:'Java 8\n'+
+            'XML/DTD\n'+
+            'XPath\n'+
+            'REST Services (Resteasy),\n'+
+            'SOAP XML Web Services client\n'+
+            'Frontend: AngularJS,\n'+
+            'EJB 3.1, JEE 6\n'+
+            'ORM: JPA (Hibernate), Liquibase\n'+
+            'Datenbank: PostgreSQL\n'+
+            'Server: JBOSS EAP 6.4 (7.5)\n'+
+            'Testing: Arquillian, JUnit 4, DBUnit\n'+
+            'Tools: Jenkins, Maven 3, Intellij, Polarion/JIRA, Deployment auf\n'+
             'Linux, Git',
             place:'Hannover, Deutschland'
         },
@@ -88,16 +88,16 @@ export default function Projects() {
             companyName: 'CTS Eventim AG & Co. KGaA',
             id:'eventim',
             time:'04.2016-09.2016',
-            businessDesc:'Weiterentwicklung von dem Fansale'+
+            businessDesc:'Weiterentwicklung von dem Fansale\n'+
             'Plattform zum privaten Verkauf von Tickets.',
-            stack:'DB: MSSQL'+
-            'Frontend: Handlebars, jQuery (mit zahlreichen Plugins, wie'+
-            'Paging, Carousel usw), Bootstrap, Vaadin, Velocity, Media Queries,'+
-            'SCSS Lint'+
-            'Backend: Hibernate, Spring 4, Apache Commons'+
-            'Testing: Jasmine JS Tests, JUnit 4, PowerMock, Mockito, DBunit'+
-            'Server: Tomcat 7, Apache Server 2.2'+
-            'Tools: Jenkins, Maven 3, Intellij, JIRA, SVN, XPath, XML,'+
+            stack:'DB: MSSQL\n'+
+            'Frontend: Handlebars, jQuery (mit zahlreichen Plugins, wie\n'+
+            'Paging, Carousel usw), Bootstrap, Vaadin, Velocity, Media Queries,\n'+
+            'SCSS Lint\n'+
+            'Backend: Hibernate, Spring 4, Apache Commons\n'+
+            'Testing: Jasmine JS Tests, JUnit 4, PowerMock, Mockito, DBunit\n'+
+            'Server: Tomcat 7, Apache Server 2.2\n'+
+            'Tools: Jenkins, Maven 3, Intellij, JIRA, SVN, XPath, XML,\n'+
             'JSONPath',
             place:'Bremen, Deutschland',
         },
@@ -105,40 +105,40 @@ export default function Projects() {
             companyName: 'Vodafone GmbH',
             id:'vodafone',
             time:'08.2014-03.2015',
-            businessDesc:'Weiterentwicklung von einem Ticketsystem,'+
-                'f&uuml;r die Erfassung von Reparatur und Installationen vor Ort'+
+            businessDesc:'Weiterentwicklung von einem Ticketsystem,\n'+
+                'für die Erfassung von Reparatur und Installationen vor Ort\n'+
                'beim Kunden.',
-            stack:'WebLogic 10.3.5, 12.1.2'+
-                'EJB 3.1'+
-                'JPA 2.3'+
-                'JEE 6'+
-                'Hibernate JPA'+
-                'Informix DB, Oracle DB'+
-                'Rest Services Jersey Server 2.13 (JSON)'+
-                'Spring MVC, Boot als Spielwiese'+
-                'SOAP XML Web Services'+
-                'JUnit 4, Mockito, DBUnit, SoapUI, Clover'+
+            stack:'WebLogic 10.3.5, 12.1.2\n'+
+                'EJB 3.1\n'+
+                'JPA 2.3\n'+
+                'JEE 6\n'+
+                'Hibernate JPA\n'+
+                'Informix DB, Oracle DB\n'+
+                'Rest Services Jersey Server 2.13 (JSON)\n'+
+                'Spring MVC, Boot als Spielwiese\n'+
+                'SOAP XML Web Services\n'+
+                'JUnit 4, Mockito, DBUnit, SoapUI, Clover\n'+
                 'Build Management mit Hudson/Maven 2, Bash, SVN',
-            place:'M&uuml;nchen, Deutschland'
+            place:'München, Deutschland'
         },
         {
             companyName: 'Lufthansa Systems/Volkswagen AG',
             id:'lufthansa',
             time:'03.2014-06.2014',
-            businessDesc:  'Car Configurator – ein Auto zusammenstellen'+
-                'inklusive Regeln daf&uuml;r. Die Zusammensetzung von'+
-                'bestimmte Paketen als Bestandteile von Autos. Die Verf&uuml;gbarkeit'+
+            businessDesc:  'Car Configurator – ein Auto zusammenstellen\n'+
+                'inklusive Regeln dafür. Die Zusammensetzung von\n'+
+                'bestimmte Paketen als Bestandteile von Autos. Die Verfügbarkeit\n'+
                 'von Modellen.',
-            stack:  'WebSphere 6.1/8/8.5 (Liberty)'+
-                    'Eclipse/RAD'+
-                    'Maven 2, Jenkins/TeamCity'+
-                    'EJB 2.5'+
-                    'JEE 5'+
-                    'JPA 1.2/2'+
-                    'Tomcat'+
-                    'SVN, XML/XSD, XPath'+
-                    'Build Management und Weiterentwicklung von Web Services'+
-                    '(Maintenance).'+
+            stack:  'WebSphere 6.1/8/8.5 (Liberty)\n'+
+                    'Eclipse/RAD\n'+
+                    'Maven 2, Jenkins/TeamCity\n'+
+                    'EJB 2.5\n'+
+                    'JEE 5\n'+
+                    'JPA 1.2/2\n'+
+                    'Tomcat\n'+
+                    'SVN, XML/XSD, XPath\n'+
+                    'Build Management und Weiterentwicklung von Web Services\n'+
+                    '(Maintenance).\n'+
                     'Bash Skripte pflegen und erweitern',
             place:  'Wolfsburg, Deutschland'
         },
@@ -146,18 +146,18 @@ export default function Projects() {
         companyName: 'Vodafone GmbH',
         id:'lufthansa',
         time:'04.2013– 02.2014',
-        businessDesc:'Erfassung von internen Abl&auml;ufen, Modem'+
-            'Provisionierung, C4, C5 Switches Verwaltung, Routers Konfiguration/'+
-            'Regeln, Kundendaten Verwaltung, Lawful Interception,'+
+        businessDesc:'Erfassung von internen Abl&auml;ufen, Modem\n'+
+            'Provisionierung, C4, C5 Switches Verwaltung, Routers Konfiguration/\n'+
+            'Regeln, Kundendaten Verwaltung, Lawful Interception\n,'+
             'Notrufrouting, Mahnsperren usw.',
-        stack:'Liferay 6.1.1 & 6.1.2/Spring'+
-            'auf Weblogic 12.1.1 & 12.1.2'+
-            'Tools:Eclipse, Bamboo von Atlassian, Maven 2, SVN,'+
-            'XML/XSD'+
-            'Liferay Portlets zu Spring Controllers portieren, damit die Dependency'+
-            'Injection genutzt werden kann.'+
-            'ORM: EclipseLink JPA, Spring Data, QueryDSL.'+
-            'WebServices in Portlets (Apache CXF).'+
+        stack:'Liferay 6.1.1 & 6.1.2/Spring\n'+
+            'auf Weblogic 12.1.1 & 12.1.2\n'+
+            'Tools:Eclipse, Bamboo von Atlassian, Maven 2, SVN,\n'+
+            'XML/XSD\n'+
+            'Liferay Portlets zu Spring Controllers portieren, damit die Dependency\n'+
+            'Injection genutzt werden kann.\n'+
+            'ORM: EclipseLink JPA, Spring Data, QueryDSL.\n'+
+            'WebServices in Portlets (Apache CXF).\n'+
             'Datenbank: Oracle',
         place:'Berlin, Deutschland'
     },
@@ -165,16 +165,16 @@ export default function Projects() {
         companyName: 'Immobilienscout24 (Scout24 SE)',
         id:'is24',
         time:'08.2008–04.2013',
-        businessDesc:'(1)Weiterentwicklung von RESTAPI f&uuml;r Expose und Ergebnisliste. (2)Entwicklung von iOS Apps f&uuml;r AppStore (Objective C)',
-        stack:'Tools: Xcode, Appcode, Git (Entwicklung mit iOS 5/6), Git'+
-            'Frontend: Servlets, Spring MVC, YUI Library'+
-            'Backend: Hibernate, Web Services (Apache CXF REST-API),'+
-            'Apache SOLR (Suchmachine),'+
-            'JBOSS Mailer'+
-            'Security: XSS, SQL Injections prevention'+
-            'Scrum, Kanban'+
-            'Java Tools: IDEA/Eclipse, Maven2/TeamCity/Ant/Ivy, SVN,'+
-            'release management mit RPM, SonarQube'+
+        businessDesc:'(1)Weiterentwicklung von RESTAPI für Expose und Ergebnisliste. \n(2)Entwicklung von iOS Apps für AppStore (Objective C)',
+        stack:'Tools: Xcode, Appcode, Git (Entwicklung mit iOS 5/6), Git\n'+
+            'Frontend: Servlets, Spring MVC, YUI Library\n'+
+            'Backend: Hibernate, Web Services (Apache CXF REST-API),\n'+
+            'Apache SOLR (Suchmachine),\n'+
+            'JBOSS Mailer\n'+
+            'Security: XSS, SQL Injections prevention\n'+
+            'Scrum, Kanban\n'+
+            'Java Tools: IDEA/Eclipse, Maven2/TeamCity/Ant/Ivy, SVN,\n'+
+            'release management mit RPM, SonarQube\n'+
             'Datenbank: Oracle',
         place:'Berlin, Deutschland'
     },

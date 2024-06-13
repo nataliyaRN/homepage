@@ -28,9 +28,9 @@ export default function ProjectTable({id, time, businessDesc, stack, place}: Pro
         <Table sx={{ minWidth: 650 }}  className='table-header'>
 
                 <TableRow>
-                    <TableCell className='table-header'></TableCell>
-                    <TableCell className='table-header'>Zeit</TableCell>
-                    <TableCell className='table-header'>Ort</TableCell>
+                    <TableCell className='table-header' style={{width:'10%'}}></TableCell>
+                    <TableCell className='table-header' style={{width:'15%'}}>Zeit</TableCell>
+                    <TableCell className='table-header' style={{width:'15%'}}>Ort</TableCell>
                     <TableCell className='table-header'>fachliche Beschreibung</TableCell>
                 </TableRow>
 
@@ -54,7 +54,7 @@ export default function ProjectTable({id, time, businessDesc, stack, place}: Pro
                         <Typography sx={{fontSize: '0.875rem'}}>{place}</Typography>
                     </TableCell>
                     <TableCell align="left" className='table-body'>
-                        <Typography sx={{fontSize: '0.875rem'}}>{businessDesc}</Typography>
+                        <Typography sx={{fontSize: '0.875rem', whiteSpace: 'pre-line'}}>{businessDesc}</Typography>
                     </TableCell>
                 </TableRow>
                 <TableRow>
@@ -63,7 +63,7 @@ export default function ProjectTable({id, time, businessDesc, stack, place}: Pro
                             <Box sx={{ margin: 1 }}>
                                 <Typography  gutterBottom component="div" >
                                     {stack.split("&").map((curs, idx) => (
-                                        <Typography style={{fontSize: '0.875rem'}} key={idx}>{curs}</Typography>
+                                        <Typography style={{fontSize: '0.875rem', whiteSpace: 'pre-line'}} key={idx}>{curs}</Typography>
                                     ))}
                                 </Typography>
                             </Box>
