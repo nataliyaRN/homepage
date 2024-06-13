@@ -1,6 +1,7 @@
 import React from "react";
 import {useNavigate} from "react-router-dom";
-import {Link} from "@mui/material";
+import {AppBar, Box, Button, IconButton, Link, Toolbar, Typography} from "@mui/material";
+import IntegrationInstructionsIcon from '@mui/icons-material/IntegrationInstructions';
 
 export default function Header() {
 
@@ -14,25 +15,23 @@ export default function Header() {
     const  navigateToDashboard = () => {
         navigate('/');
     }
+    const  navigateToContact = () => {
+        navigate('/kontakt');
+    }
 
-
-    return (<div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease"
-         data-easing2="ease" role="banner" className={`navbar w-nav`}>
-        <div className={`container w-container`}>
-            <div className='navbar-wrap'>
-                <Link href="/" aria-current="page" className={`brand w-nav-brand w--current`}>
-                    <img src={`${process.env.PUBLIC_URL}/logo_big.png`}
-                     width="Auto" height="Auto" alt="image" className="header-logo"/></Link>
-                <nav role="navigation" className={`nav-menu w-nav-menu`}>
-                    <Link onClick={navigateToDashboard} className={`nav-link w-nav-link w--current`}>Home</Link>
-                    <Link onClick={navigateToProjekte} className={`nav-link w-nav-link`}>Projekte</Link>
-                    <Link onClick={navigateToAusbildung} className={`nav-link w-nav-link`}>Ausbildung</Link>
-                </nav>
-                <div className={`nav-button-block`}>
-                    <Link href="/kontakt"  className={`button-primary w-button`}>Kontakt</Link>
-                </div>
-
-            </div>
-        </div>
-    </div>);
+    return (
+        <AppBar position='static' className={`container w-container`} style={{backgroundColor:'var(--gray)'}}>
+            <Toolbar className={`navbar-wrap`}>
+                <IconButton className={`brand w-nav-brand`} size='large' area-label='logo' edge='start'>
+                    <IntegrationInstructionsIcon/>
+                </IconButton>
+                <Box>
+                    <Button className={`nav-link w-nav-link`} onClick={navigateToDashboard}>Home</Button>
+                    <Button className={`nav-link w-nav-link`} onClick={navigateToProjekte}>Projekte</Button>
+                    <Button className={`nav-link w-nav-link`} onClick={navigateToAusbildung}>Ausbildung</Button>
+                    <Button className={`nav-link w-nav-link`} onClick={navigateToContact}>Kontakt</Button>
+                </Box>
+            </Toolbar>
+        </AppBar>
+    );
 }
