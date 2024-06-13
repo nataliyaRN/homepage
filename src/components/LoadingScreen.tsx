@@ -1,12 +1,8 @@
 import { m } from 'framer-motion';
-// @mui
 import { alpha, styled } from '@mui/material/styles';
 import { Box, SxProps } from '@mui/material';
-//
-import LogoLaunchplan from './LogoPage';
 import ProgressBar from './ProgressBar';
 
-// ----------------------------------------------------------------------
 
 const RootStyle = styled('div')(({ theme }) => ({
     right: 0,
@@ -21,7 +17,6 @@ const RootStyle = styled('div')(({ theme }) => ({
     backgroundColor: theme.palette.background.default,
 }));
 
-// ----------------------------------------------------------------------
 
 type Props = {
     isDashboard?: boolean;
@@ -45,7 +40,6 @@ export default function LoadingScreen({ isDashboard, ...other }: Props) {
                             repeat: Infinity,
                         }}
                     >
-                        <LogoLaunchplan disabledLink sx={{ width: 64, height: 64 }} />
                     </m.div>
 
                     <Box

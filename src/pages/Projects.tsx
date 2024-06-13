@@ -2,16 +2,37 @@ import Page from "../components/Page";
 import Lottie from "react-lottie";
 import {
     chooseAServiceDef,
-    processLottieDef, processThreeDef,
-    receiveCustomPlanDef,
-    requestAMeetingEndeDef,
-    requestAMeetingLottieDef
 } from "./LottiesDefs";
 import React from "react";
 import ProjectTable from "./ProjectTable";
 
 
 export default function Projects() {
+
+    const projects = [
+        {
+            companyName: 'ComDirect (Commerzbank AG)',
+            id:'commerz',
+            time:'08.2024 - bis jetzt',
+            businessDesc:'Entwicklung von der Echtzeit&uuml;berweissungen',
+            stack:'Java',
+            place:'Quintorf',
+        },
+        {
+            companyName: 'Financial Services',
+            id:'commerz',
+            time:'08.2024 - bis jetzt',
+            businessDesc:'Entwicklung von der Echtzeit&uuml;berweissungen',
+            stack:'Java',
+            place:'Quintorf',
+        },
+
+    ]
+
+
+
+
+
     return <Page title='Nataliya Wierts'>
         <section className={`section process-section`}>
             <div className={`w-layout-blockcontainer container-small w-container`}>
@@ -21,7 +42,6 @@ export default function Projects() {
                 <div className="process-main-block">
                     <div className="process-block">
                         <div className={`process-number-block process-number`}>
-                            <Lottie options={processLottieDef} width='60px' style={{color:'black'}}/>
                             <div className="process-number">ComDirect (Commerzbank AG)</div>
                         </div>
                         <ProjectTable id='commerz'
@@ -30,7 +50,8 @@ export default function Projects() {
                                       stack='Java'
                                       place='Quintorf'
                         />
-                        <Lottie options={chooseAServiceDef} width='180px' style={{marginTop: '15px'}}/>
+
+
                         <h3 className={`process-number`}>Financial Services</h3>
                         <ProjectTable id='pollard'
                                       time='12.2022 - 06.2024'
@@ -54,7 +75,6 @@ export default function Projects() {
 
                     <div className="process-block">
                         <div className="process-number-block">
-                            <Lottie options={requestAMeetingLottieDef} width='60px'/>
                             <div className="process-number">Finanzinformatik GmbH & Co. KG</div>
                         </div>
                         <ProjectTable id='finanzinfomatik'
@@ -80,7 +100,6 @@ export default function Projects() {
                                             Tools: Jenkins, Maven 3, Intellij, JIRA, SVN&'
                                       place='Hannover, Deutschland'
                         />
-                        <Lottie options={requestAMeetingEndeDef} width='160px' style={{marginTop: '20px'}}/>
                     </div>
                     <div className="process-block">
                         <div className="process-number-block">
@@ -105,7 +124,6 @@ export default function Projects() {
                                                 Linux, Git&'
                                       place='Hannover, Deutschland'
                         />
-                        <Lottie options={processThreeDef} width='160px' style={{marginTop: '15px'}}/>
                     </div>
                     <div className={`process-block`}>
                         <div className="process-number-block">
@@ -129,7 +147,6 @@ export default function Projects() {
                     </div>
                     <div className={`process-block`}>
                         <div className="process-number-block">
-                            <Lottie options={receiveCustomPlanDef} width='60px'/>
                             <div className="process-number">Vodafone GmbH</div>
                         </div>
                         <ProjectTable id='vodafone'
@@ -150,7 +167,6 @@ export default function Projects() {
                                             Build Management mit Hudson/Maven 2, Bash, SVN&'
                                       place='M&uuml;nchen, Deutschland'
                         />
-                        <Lottie options={chooseAServiceDef} width='180px' style={{marginTop: '15px'}}/>
                     </div>
                     <div className={`process-block`}>
                         <div className="process-number-block">
@@ -175,7 +191,6 @@ export default function Projects() {
                                             Bash Skripte pflegen und erweitern'
                                       place='Wolfsburg, Deutschland'
                         />
-                        <Lottie options={processThreeDef} width='160px' style={{marginTop: '15px'}}/>
                     </div>
                     <div className={`process-block`}>
                         <div className="process-number-block">
@@ -201,7 +216,6 @@ export default function Projects() {
                     </div>
                     <div className={`process-block last`}>
                         <div className="process-number-block">
-                            <Lottie options={requestAMeetingEndeDef} width='160px'/>
                             <div className="process-number">Immobilienscout24 (Scout24 SE)</div>
                         </div>
                         <ProjectTable id='is24'
