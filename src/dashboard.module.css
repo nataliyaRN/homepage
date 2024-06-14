@@ -2887,6 +2887,7 @@ blockquote {
     padding-top: 10px;
     font-size: 28px;
     font-weight: 700;
+    padding-bottom:3px;
 }
 
 .process-title {

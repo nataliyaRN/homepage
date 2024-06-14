@@ -1,8 +1,4 @@
 import Page from "../components/Page";
-import Lottie from "react-lottie";
-import {
-    chooseAServiceDef,
-} from "./LottiesDefs";
 import React from "react";
 import ProjectTable from "./ProjectTable";
 
