@@ -2,7 +2,7 @@ import Page from "../components/Page";
 import {Button,  Paper, Stack, TextField} from "@mui/material";
 import {styled} from "@mui/material/styles";
 import axios from "axios";
-import {useForm, FormProvider} from 'react-hook-form';
+import {useForm, FormProvider, useFormState} from 'react-hook-form';
 import {yupResolver} from "@hookform/resolvers/yup";
 import {getContactFormSchema} from "./validation";
 
@@ -25,13 +25,13 @@ export default function Kontakt() {
         email : '',
         message: ''
     }
-    const methods = useForm<MessageForm>({
+    /*const methods = useForm<MessageForm>({
         resolver: yupResolver(getContactFormSchema()),
         defaultValues,
-    });
+    });*/
 
-    const { handleSubmit, formState: {errors} } = useForm<MessageForm>();
-    const submitForm = async (formFields: MessageForm) => {
+    const methods = useForm<MessageForm>();
+    const submitForm = async (formFields: any) => {
         console.dir(formFields.email+' '+formFields.message);
 
         try {
@@ -40,8 +40,7 @@ export default function Kontakt() {
                 message: formFields.message,
             }),  {headers: {
                     'Content-Type': 'application/json',
-                    'Access-Control-Allow-Origin': '*',
-                    'Access-Control-Request-Method':'*',}
+                    'Access-Control-Allow-Origin': '*',}
             });
 
         } catch (error) {
@@ -49,17 +48,18 @@ export default function Kontakt() {
         }
 
     };
+
     return (<Page title='Nataliya Wierts'>
         <section className={`section hero-section`}>
             <Stack spacing={2} style={{marginTop: '15px'}}>
-                <FormProvider {...methods} >
-                <form autoComplete="off" onSubmit={handleSubmit(submitForm)}  style={{height: '100%'}} >
-                    <Item><TextField
-                        label="Ihre Email Adresse"
+                <FormProvider {...methods}>
+                    <form onSubmit={methods.handleSubmit(submitForm)}>
+                    <Item>
+                        <TextField
+                        label='Ihre Email Adresse'
                         required
-                        name='email'
-                        variant="outlined"
-                        color="secondary"
+                        variant='outlined'
+                        color='secondary'
                         type="email"
                         sx={{
                             mb: 3,
@@ -68,15 +68,16 @@ export default function Kontakt() {
                             '& .MuiOutlinedInput-root': {
                                 backgroundColor: 'white'
                             }
-                        }}/>
+                        }}
+                        {...methods.register('email')}
+                        />
                     </Item>
                     <Item>
                         <TextField label='Ihr Angebot'
                                    required
-                                   variant="outlined"
-                                   name='message'
+                                   variant='outlined'
                                    multiline
-                                   rows={2}
+                                   minRows={2}
                                    maxRows={10}
                                    sx={{
                                        mb: 3,
@@ -85,7 +86,8 @@ export default function Kontakt() {
                                        '& .MuiOutlinedInput-root': {
                                            backgroundColor: 'white'
                                        }
-                                   }}/>
+                                   }}
+                                   {...methods.register('message')}/>
                     </Item>
                     <Item>
                         <div className={`hero-button-block hero-title-main-block`}>
@@ -94,7 +96,7 @@ export default function Kontakt() {
                         </div>
                     </Item>
 
-                </form>
+                    </form>
                 </FormProvider>
             </Stack>
         </section>
