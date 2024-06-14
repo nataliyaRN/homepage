@@ -64,7 +64,7 @@ export default function Projects() {
             id:'euromobil',
             time:'10.2016-03.2017',
             businessDesc:'Entwicklung der Backend für die Reservierung'+
-            'von Autos, Verwaltung von Mietstationen, Verf&uuml;gbarkeiten.',
+            'von Autos, Verwaltung von Mietstationen, Verfügbarkeiten.',
             stack:'Java 8\n'+
             'XML/DTD\n'+
             'XPath\n'+
@@ -142,9 +142,9 @@ export default function Projects() {
         companyName: 'Vodafone GmbH',
         id:'lufthansa',
         time:'04.2013– 02.2014',
-        businessDesc:'Erfassung von internen Abl&auml;ufen, Modem\n'+
-            'Provisionierung, C4, C5 Switches Verwaltung, Routers Konfiguration/\n'+
-            'Regeln, Kundendaten Verwaltung, Lawful Interception\n,'+
+        businessDesc:'Erfassung von internen Abläufen, Modem'+
+            'Provisionierung, C4, C5 Switches Verwaltung, Routers Konfiguration/'+
+            'Regeln, Kundendaten Verwaltung, Lawful Interception,'+
             'Notrufrouting, Mahnsperren usw.',
         stack:'Liferay 6.1.1 & 6.1.2/Spring\n'+
             'auf Weblogic 12.1.1 & 12.1.2\n'+

@@ -54,7 +54,7 @@ export default function ProjectTable({id, time, businessDesc, stack, place}: Pro
                         <Typography sx={{fontSize: '0.875rem'}}>{place}</Typography>
                     </TableCell>
                     <TableCell align="left" className='table-body'>
-                        <Typography sx={{fontSize: '0.875rem', whiteSpace: 'pre-line'}}>{businessDesc}</Typography>
+                        <Typography sx={{whiteSpace: 'pre-line', fontSize: '0.875rem'}}>{businessDesc}</Typography>
                     </TableCell>
                 </TableRow>
                 <TableRow>
